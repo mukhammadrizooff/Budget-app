@@ -6,7 +6,7 @@ RSpec.feature 'Logins', type: :feature do
   end
 
   scenario 'show groups_path' do
-    expect(page).to have_content('Eagle pay')
+    expect(page).to have_content('Pay Modus')
   end
 
   scenario 'show groups_path' do
