@@ -4,7 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '3.0.0'
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
-gem 'rails', '~> 7.0.3'
+gem 'rails', '~> 7.0.0'
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem 'sprockets-rails'
@@ -48,12 +48,24 @@ gem 'bootsnap', require: false
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 
+gem 'devise'
+
+gem 'cancancan'
+
+gem 'rubocop', '>= 1.0', '< 2.0'
+
+gem 'better_errors', '~> 2.9', '>= 2.9.1'
+
+gem 'bootstrap', '~> 5.1.3'
+
+gem 'database_cleaner'
+
 group :development, :test do
+  # gem 'rspec-rails', '~> 5.0.0'
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem 'debug', platforms: %i[mri mingw x64_mingw]
+  gem 'sqlite3'
 end
-
-gem 'devise'
 
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
@@ -72,7 +84,3 @@ group :test do
   gem 'selenium-webdriver'
   gem 'webdrivers'
 end
-
-gem 'rubocop', '>= 1.0', '< 2.0'
-
-gem 'cancancan'
