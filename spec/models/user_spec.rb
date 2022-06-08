@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe User, type: :model do
   before(:each) do
-    @user = User.new(name: 'Donard', email: 'test@gmail.com', password: 'password', password_confirmation: 'password')
+    @user = User.new(name: 'Rizooff', email: 'test@gmail.com', password: 'password', password_confirmation: 'password')
 
     @user.save
 
@@ -21,7 +21,7 @@ RSpec.describe User, type: :model do
 
   it 'should have a name' do
     @user.name
-    expect(@user.name).to eq('Donard')
+    expect(@user.name).to eq('Rizooff')
   end
 
   it 'should have an email' do

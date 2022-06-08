@@ -5,7 +5,7 @@ RSpec.feature 'Groups', type: :feature do
     visit root_path
     click_link 'Sign up'
     fill_in 'Name', with: 'Test'
-    fill_in 'Email', with: 'donard@gmail.com'
+    fill_in 'Email', with: 'Rizooff@gmail.com'
     fill_in 'Password', with: 'password'
     fill_in 'Confirm Password', with: 'password'
     click_button 'Sign up'
