@@ -2,6 +2,8 @@
 
 The **Pay Modus** App is going to be helpful to track your expenses and transactions.
 
+![image](https://user-images.githubusercontent.com/63915024/172953186-26b6b49a-1f2b-4743-a180-0f6093437bb9.png)
+
 
 
 ## Built With
